@@ -1,0 +1,20 @@
+<div class="container-fluid">
+<label>
+  Capital
+  <input class="form-control" type="number" [(ngModel)]="c"/>
+</label>
+
+<label>
+Taxa de Juros 
+<input class="form-control" type="number" [(ngModel)]="i"/>
+</label>
+
+<label>
+Tempo
+<input class="form-control" type="number" [(ngModel)]="t"/>
+</label>
+
+<p *ngIf="getJurosSimples() as resultado">
+  Resultado: {{resultado}}
+</p>
+</div>
